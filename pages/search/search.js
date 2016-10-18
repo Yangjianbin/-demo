@@ -9,7 +9,7 @@ Page({
         loading:false,
         hasMore:false
     },
-    handleleLoadMore(){
+    handleLoadMore(){
         if(!this.data.hasMore) return
         this.setData({
             subtitle:'加载中...',
@@ -33,5 +33,20 @@ Page({
             })
             console.error(e);
         })
+    },
+    handleSearch(e){
+        if(!e.detail.value) return;
+        this.setData({movies:[],page:1})
+        this.setData({
+            subtitle:'加载中....',
+            hasMore:true,
+            loading:true,
+            search:e.detail.value
+        })
+        this.handleLoadMore()
+    },
+    onPullDownRefresh(){
+        this.setData({movies:[],page:1})
+        this.handleLoadMore().then(()=>app.wechat.original.stopPullDownRefresh())
     }
 })

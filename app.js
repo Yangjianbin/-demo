@@ -1,5 +1,5 @@
 import wechat from './utils/wechat';
-import doban from './utils/douban';
+import douban from './utils/douban';
 App({
   data:{
     name:'Douban 电影',

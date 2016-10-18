@@ -1,10 +1,9 @@
 {
   "pages":[
     "pages/splash/splash",
-    "pages/board/board",
-    "pages/list/list",
-    "pages/item/item",
     "pages/search/search",
+    "pages/board/board",
+    "pages/item/item",
     "pages/profile/profile"
   ],
   "window":{
@@ -25,17 +24,17 @@
         "text":"搜索",
         "pagePath":"pages/search/search",
         "iconPath":"images/search.png",
-        "selectedIconPath":"images/search-active.png"
+        "selectedIconPath":"images/search-actived.png"
       },{
         "text":"榜单",
         "pagePath":"pages/board/board",
         "iconPath":"images/board.png",
-        "selectedIconPath":"images/board-active.png"
+        "selectedIconPath":"images/board-actived.png"
       },{
         "text":"我的",
         "pagePath":"pages/profile/profile",
         "iconPath":"images/profile.png",
-        "selectedIconPath":"images/profile-active.png"
+        "selectedIconPath":"images/profile-actived.png"
       }
     ]
   },
